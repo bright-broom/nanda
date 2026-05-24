@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(mv msgdesk.md /tmp/msgdesk.md.bak)",
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --turbopack --import-alias \"@/*\" --use-npm --no-git --yes)"
+    ]
+  }
+}
