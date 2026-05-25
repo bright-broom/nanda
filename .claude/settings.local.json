@@ -3,7 +3,17 @@
     "allow": [
       "Bash(npm --version)",
       "Bash(mv msgdesk.md /tmp/msgdesk.md.bak)",
-      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --turbopack --import-alias \"@/*\" --use-npm --no-git --yes)"
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --turbopack --import-alias \"@/*\" --use-npm --no-git --yes)",
+      "Bash(npm install *)",
+      "Bash(DATABASE_URL=postgresql://dummy:dummy@localhost:5432/dummy npx drizzle-kit generate --name=init)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(DATABASE_URL=postgresql://dummy:dummy@localhost:5432/dummy DEFAULT_TENANT_ID=00000000-0000-0000-0000-000000000000 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_dummy CLERK_SECRET_KEY=sk_test_dummy RESEND_API_KEY=re_dummy NEXT_PUBLIC_APP_URL=http://localhost:3000 npm run build)",
+      "Bash(git check-ignore *)",
+      "Bash(git ls-remote *)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
